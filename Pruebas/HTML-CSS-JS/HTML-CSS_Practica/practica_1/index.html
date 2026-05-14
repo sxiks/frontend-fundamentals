@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandbox de Practica CSS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <header id="main-header" class="header-container">
+        <h1 class="title">Mi laboratorio de CSS</h1>
+        <nav class="na">
+            <ul>
+                <li><a href="#selectores">Selectores</a></li>
+                <li><a href="#flexbox">Flexbox</a></li>
+                <li><a href="#grid">Grid</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+            <!-- ==========================================
+                    1. SECCIÓN PARA PRACTICAR SELECTORES
+                ========================================== -->
+        <section id="selectores" class="practice-selection">
+            <h2 class="section-title">Practica de Selectores</h2>
+
+            <div class="content-box">
+                <p id="texto-destacado">Este es un párrafo con ID único.</p>
+                <p class="texto-normal">Este es un párrafo con una clase común.</p>
+                <p class="texto-normal-alerta">Este párrafo tiene dos clases.</p>
+
+                <ul class="lista-items">
+                    <li >Elemento 1 (Prueba : first-child aquí)</li>
+                    <li >Elemento 2 (Prueba : nth-child(2) aquí)</li>
+                    <li >Elemento 3 (Prueba : last-child aquí)</li>
+                </ul>
+
+                <!-- Practica de selectores de atributos y pseudo-clases de estado -->
+                 <form class="formulario-prueba">
+                    <input type="text" placeholder="Escribe aquí..." required>
+                    <input type="password" placeholder="Contraseña" disabled>
+                    <button class="btn_primary-btn">Enviar (prueba :hover aquí)</button>
+                 </form>
+            </div>
+        </section>
+
+            <!-- ==========================================
+                    2. SECCIÓN PARA PRACTICAR FLEXBOX
+                ========================================== -->
+        <section id="flexbox" class="practice-section">
+            <h2 class="section-title">Practica de Flexbox</h2>
+            <p>Aplica <code>display: flex;</code> al contenedor de abajo:</p>
+
+            <!-- Contenedor flex -->
+            <div class="flex-container">
+                <div class="flex-item_card">Item 1</div>
+                <div class="flex-item_card">Item 2</div>
+                <div class="flex-item_card">Item 3</div>
+            </div>
+        </section>
+
+            <!-- ==========================================
+                    3. SECCIÓN PARA PRACTICAR CSS GRID
+             ========================================== -->
+        <section id="grid" class="practice-section">
+            <h2 class="section-title">Practica de CSS Grid</h2>
+            <p>Aplica <code>display: grid;</code> para crear layout complejo:</p>
+
+            <!-- Contenedor Grid -->
+            <div class="grid-container">
+                <!-- Elementos Grid (Areas) -->
+                <div class="grid-item_header-area">Cabecera del Grid</div>
+                <div class="grid-item_sidebar-area">Barra lateral</div>
+                <div class="grid-item_content-area">Contenido Principal</div>
+                <div class="grid-item_footer-area">Pie del Grid</div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 - Practica de desarrollo Web</p>
+    </footer>
+    
+</body>
+</html>

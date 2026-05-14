@@ -1,0 +1,75 @@
+/*1. RESET BÁSICO - ¿Por qué? Cada navegador añade márgenes por defecto. 
+   Esto asegura que tu diseño se vea igual en Chrome, Safari o Firefox. */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Fundamental: el padding y border no aumentan el tamaño total de la caja. */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f9;
+}
+
+/* 2. CONTENEDORES DE PRÁCTICA - ¿Por qué? Les damos bordes y colores 
+   para que veas visualmente cómo se mueven al aplicar Flex o Grid. */
+
+.practice-section {
+    padding: 40px 20px;
+    border-bottom: 2px dashed #ccc; /* Divide las zonas de práctica */
+}
+
+.section-title {
+    margin-bottom: 20px;
+    color: #2c3e50;
+    text-align: center;
+}
+
+/* 3. ESTILOS PARA LAS "CAJAS" (Cards) */
+.card {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* 4. PREPARACIÓN PARA FLEXBOX - Contenedor padre */
+.flex-container {
+    background: #fff;
+    padding: 20px;
+    border: 3px solid #3498db;
+    min-height: 200px;
+    /* Aquí es donde empezarás a escribir: display: flex; */
+}
+
+/* 5. PREPARACIÓN PARA GRID - Contenedor padre */
+.grid-container {
+    background: #fff;
+    padding: 20px;
+    border: 3px solid #e74c3c;
+    display: grid;
+    gap: 10px;/* Espacio entre celdas */
+    /* Aquí es donde practicarás grid-template-columns */
+}
+
+.grid-item {
+    background: #e74c3c;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* 6. RESPONSIVE DESIGN - ¿Por qué? Cambia el diseño en pantallas pequeñas. */
+@media (max-width: 768px) {
+    .header-container {
+        text-align: center;
+    }
+}
+
