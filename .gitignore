@@ -1,0 +1,16 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# JetBrains
+.idea/
+
+# Vim
+*.swp
+*.swo
+
+# Logs
+*.log
