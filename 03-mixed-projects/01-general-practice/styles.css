@@ -47,6 +47,26 @@ body {
     border: 3px solid #3498db;
     min-height: 200px;
     /* Aquí es donde empezarás a escribir: display: flex; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+
+/* 4.1  - Contenedores hijos */
+.flex-item_card {
+    background-color: teal;
+    width: 100px;
+    height: 50px;
+    margin: 10px;
+    padding: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: white;
+    text-align: center;
 }
 
 /* 5. PREPARACIÓN PARA GRID - Contenedor padre */
@@ -64,6 +84,27 @@ body {
     color: white;
     padding: 20px;
     text-align: center;
+}
+
+/* 5.1  - Contenedores hijos */
+/* Cabecera del Grid*/
+.grid-item_header-area {
+
+}
+
+/* Barra lateral*/
+.grid-item_sidebar-area {
+
+}
+
+/* Contenido del Grid*/
+.grid-item_content-area {
+
+}
+
+/* Pie del Grid*/
+.grid-item_footer-area {
+
 }
 
 /* 6. RESPONSIVE DESIGN - ¿Por qué? Cambia el diseño en pantallas pequeñas. */
