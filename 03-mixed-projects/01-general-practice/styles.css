@@ -71,40 +71,55 @@ body {
 
 /* 5. PREPARACIÓN PARA GRID - Contenedor padre */
 .grid-container {
-    background: #fff;
-    padding: 20px;
-    border: 3px solid #e74c3c;
-    display: grid;
-    gap: 10px;/* Espacio entre celdas */
-    /* Aquí es donde practicarás grid-template-columns */
+  background: #fff;
+  padding: 20px;
+  border: 3px solid #e74c3c;
+  display: grid;
+  gap: 10px; /* Espacio entre celdas */
+
+  /* Definimos las columnas (barra lateral de 250px y contenido flexible) */
+  grid-template-columns: 250px 1fr;
+
+  /* Definimos las filas (cabecera automática, contenido flexible, pie automático) */
+  grid-template-rows: auto 1fr auto;
+
+  /* Diseñamos el layout visualmente con áreas */
+  grid-template-areas:
+    "header header"
+    "sidebar content"
+    "footer footer";
 }
 
-.grid-item {
-    background: #e74c3c;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-/* 5.1  - Contenedores hijos */
-/* Cabecera del Grid*/
-.grid-item_header-area {
-
-}
-
-/* Barra lateral*/
-.grid-item_sidebar-area {
-
-}
-
-/* Contenido del Grid*/
-.grid-item_content-area {
-
-}
-
-/* Pie del Grid*/
+/* Estilo base compartido para los elementos (puedes unificar clases en el HTML o aplicar estilos generales) */
+.grid-item_header-area,
+.grid-item_sidebar-area,
+.grid-item_content-area,
 .grid-item_footer-area {
+  background: #e74c3c;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 4px;
+}
 
+/* 5.1  - Asignación de áreas a los elementos hijos */
+.grid-item_header-area {
+  grid-area: header;
+  background: #c0392b; /* Un tono un poco más oscuro para diferenciar la cabecera */
+}
+
+.grid-item_sidebar-area {
+  grid-area: sidebar;
+}
+
+.grid-item_content-area {
+  grid-area: content;
+  background: #d63031; /* Variación de color para el contenido */
+}
+
+.grid-item_footer-area {
+  grid-area: footer;
+  background: #2d3436; /* Color oscuro para el pie de página */
 }
 
 /* 6. RESPONSIVE DESIGN - ¿Por qué? Cambia el diseño en pantallas pequeñas. */
